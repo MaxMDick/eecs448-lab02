@@ -1,6 +1,6 @@
 /**
-*	@author 
-*	@date 
+*	@author Max Dick
+*	@date 2/7/22
 *	@file LinkedList.hpp
 *	@brief Implementation file for templated LinkedList class
 */
@@ -32,7 +32,7 @@ int LinkedList<T>::size() const
 	/** TODO 
 		Fix this method
 	*/
-	return(0);
+	return(m_size);
 }
 
 template <typename T>
