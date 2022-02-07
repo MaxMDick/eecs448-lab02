@@ -32,6 +32,7 @@ int LinkedList<T>::size() const
 	/** TODO 
 		Fix this method
 	*/
+
 	return(m_size);
 }
 
@@ -44,6 +45,24 @@ bool LinkedList<T>::search(T value) const
 	/** TODO 
 		Fix this method
 	*/
+
+	if(m_front == nullptr)
+	{
+		return isFound;
+	}
+	while(isFound == false)
+	{
+		if(temp->getValue() == value)
+		{
+			isFound = true;
+			break;
+		}
+		if(temp->getNext() == nullptr)
+		{
+			break;
+		}
+		temp = temp->getNext();
+	}
 
 	return(isFound);
 }
